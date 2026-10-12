@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Square One Design — architectural design, planning applications and Building Regulations drawings, with over 40 years of experience.">
+<meta property="og:title" content="Square One Design">
+<meta property="og:description" content="Turning ideas into clear plans. Architectural design, planning and CAD drawings.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>Projects – Square One Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Nova+Square&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="backdrop" aria-hidden="true">
+</div>
+
+<div class="site">
+  <header class="masthead">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Square One Design — home">
+        <svg class="logo" viewBox="0 0 960 960" aria-hidden="true"><path d="M51 70A19 19 0 0 1 70 51H891A19 19 0 0 1 910 70V292A19 19 0 0 1 891 311H744L640 490H740V892A19 19 0 0 1 721 911H70A19 19 0 0 1 51 892Z"/></svg>
+        <span class="wordmark"><span class="wm-1">Square One</span> <span class="wm-2">Design</span></span>
+      </a>
+    </div>
+  </header>
+  <div class="navbar">
+    <div class="wrap">
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="wrap">
+
+    <!-- PROJECTS -->
+    <section class="page" id="page-projects">
+      <p class="eyebrow">Projects</p>
+      <h1>Previous <em>Projects</em></h1>
+      <p class="proj-intro">A selection of past work. Select a photo to see it larger.</p>
+
+      <div class="gallery" id="gallery"></div>
+      <div class="empty" id="empty" hidden>
+        <strong>Project photos coming soon</strong>
+        <span id="empty-text">Photos of previous projects will appear here.</span>
+      </div>
+
+      <nav class="pager" aria-label="Pages">
+        <a href="services.html"><span class="k">Previous</span><span class="t"><span class="arrow" aria-hidden="true">←</span> Services</span></a>
+        <a class="next" href="index.html"><span class="k">Back to</span><span class="t">Home <span class="arrow" aria-hidden="true">→</span></span></a>
+      </nav>
+    </section>
+  </main>
+
+  <footer class="foot wrap">
+    <div class="titleblock" aria-label="Drawing title block">
+      <div class="tb"><span class="k">Practice</span><span class="v brandv tb-brand"><svg class="logo" viewBox="0 0 960 960" aria-hidden="true"><path d="M51 70A19 19 0 0 1 70 51H891A19 19 0 0 1 910 70V292A19 19 0 0 1 891 311H744L640 490H740V892A19 19 0 0 1 721 911H70A19 19 0 0 1 51 892Z"/></svg>Square One Design</span></div>
+      <div class="tb"><span class="k">Drawing</span><span class="v">Projects</span></div>
+      <div class="tb"><span class="k">Drg no.</span><span class="v">SOD-004</span></div>
+      <div class="tb"><span class="k">Scale</span><span class="v">NTS</span></div>
+      <div class="tb"><span class="k">Rev</span><span class="v">A</span></div>
+      <div class="tb"><span class="k">Sheet</span><span class="v">4 of 4</span></div>
+    </div>
+    <div class="foot-meta">
+      <span>© 2026 SQUARE ONE DESIGN</span>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Project photo">
+  <div class="lb-top"><button class="lb-btn" type="button" id="lb-close">Close ✕</button></div>
+  <div class="lb-stage"><img id="lb-img" alt=""></div>
+  <div class="lb-foot">
+    <div class="lb-cap"><h3 id="lb-title"></h3><p id="lb-caption"></p></div>
+    <div class="lb-nav">
+      <button class="lb-btn" type="button" id="lb-prev" aria-label="Previous photo">←</button>
+      <button class="lb-btn" type="button" id="lb-next" aria-label="Next photo">→</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/projects.js"></script>
+</body>
+</html>
